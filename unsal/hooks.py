@@ -12,6 +12,27 @@ app_license = "mit"
 # include js, css files in header of desk.html
 # app_include_css = "/assets/unsal/css/unsal.css"
 # app_include_js = "/assets/unsal/js/unsal.js"
+doctype_list_js = {"Quotation" : "public/js/quotation.js"}
+
+doctype_js = {
+    "Sales Order" : "public/js/sales_order.js",
+    "Project" : "public/js/project.js",
+    "Purchase Order" : "public/js/purchase_order.js",
+    }
+
+fixtures = [
+    {
+        "doctype": "Custom Field",
+        "filters": [
+            ["dt", "in", [
+                "Project User"
+            ]]
+        ]
+    }
+]
+
+
+
 
 # include js, css files in header of web template
 # web_include_css = "/assets/unsal/css/unsal.css"
